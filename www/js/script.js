@@ -4,7 +4,7 @@
 
 function onBodyLoad(){
  
-  //setTimeout('init(<?php echo "$mjpegmode, $video_fps, $divider" ?>);', 100);
+  //  setTimeout('init(<?php echo "$mjpegmode, $video_fps, $divider" ?>);', 100);
   
   var e = document.getElementById("mjpeg_dest");
 
