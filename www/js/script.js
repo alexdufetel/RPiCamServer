@@ -1,6 +1,9 @@
 //
 // Interface
 //
+
+this.toggle_fullscreen(document.getElementById("mjpeg_dest"));
+
 function toggle_fullscreen(e) {
 
   var background = document.getElementById("background");
