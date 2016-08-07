@@ -2,6 +2,24 @@
 // Interface
 //
 
+function onBodyLoad(){
+ 
+  setTimeout('init(<?php echo "$mjpegmode, $video_fps, $divider" ?>);', 100);
+  
+  var e = document.getElementById("mjpeg_dest");
+
+  var background = document.getElementById("background");
+
+  if(!background) {
+    background = document.createElement("div");
+    background.id = "background";
+    document.body.appendChild(background);
+  }
+  e.className = "fullscreen";
+  background.style.display = "block";
+
+}
+
 
 function toggle_fullscreen(e) {
 
