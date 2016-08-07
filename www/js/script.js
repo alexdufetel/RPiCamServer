@@ -2,7 +2,7 @@
 // Interface
 //
 
-this.toggle_fullscreen(document.getElementById("mjpeg_dest"));
+this.toggle_fullscreen(this);
 
 function toggle_fullscreen(e) {
 
