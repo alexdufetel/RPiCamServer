@@ -2,7 +2,6 @@
 // Interface
 //
 
-this.toggle_fullscreen(this);
 
 function toggle_fullscreen(e) {
 
