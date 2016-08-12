@@ -176,6 +176,10 @@
    $divider = $config['divider'];
   ?>
 
+<?php
+    header('X-Frame-Options: GOFORIT'); 
+?>
+
 <html>
    <head>
       <meta name="viewport" content="width=550, initial-scale=1">
