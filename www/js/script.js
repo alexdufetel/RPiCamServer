@@ -33,6 +33,7 @@ function onBodyLoad(){
     if (e.data == 'hello') {
         alert('It works!');
     }
+    send_cmd("im");
     console.log(storage);
     console.log(storageRef);
     console.log(mountainsRef);
