@@ -1,8 +1,17 @@
 //
 // Interface
 //
+var config = {
+    apiKey: "AIzaSyBrb3PJaINLeNHOwp2vXMyNKTPkOjFAKt0",
+    authDomain: "fire-rover.firebaseapp.com",
+    databaseURL: "https://fire-rover.firebaseio.com",
+    storageBucket: "fire-rover.appspot.com",
+  };
 
-
+firebase.initializeApp(config);
+var storage = firebase.storage();
+var storageRef = firebase.storage().ref();
+var mountainsRef = storageRef.child('mountains.jpg');
 
 function onBodyLoad(){
  
@@ -24,6 +33,10 @@ function onBodyLoad(){
     if (e.data == 'hello') {
         alert('It works!');
     }
+    console.log(storage);
+    console.log(storageRef);
+    console.log(mountainsRef);
+
 };
 
 }

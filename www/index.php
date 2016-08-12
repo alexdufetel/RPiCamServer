@@ -187,6 +187,11 @@
       <link rel="stylesheet" href="css/style_minified.css" />
       <link rel="stylesheet" href="<?php echo getStyle(); ?>" />
       <script src="js/style_minified.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-storage.js"></script>
+
       <script src="js/script.js"></script>
       <script src="js/pipan.js"></script>
    </head>
