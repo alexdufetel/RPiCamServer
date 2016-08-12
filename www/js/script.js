@@ -2,6 +2,8 @@
 // Interface
 //
 
+
+
 function onBodyLoad(){
  
   //  setTimeout('init(<?php echo "$mjpegmode, $video_fps, $divider" ?>);', 100);
@@ -17,6 +19,12 @@ function onBodyLoad(){
   }
   e.className = "fullscreen";
   background.style.display = "block";
+
+  window.onmessage = function(e){
+    if (e.data == 'hello') {
+        alert('It works!');
+    }
+};
 
 }
 
