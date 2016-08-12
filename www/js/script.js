@@ -36,7 +36,6 @@ function onBodyLoad(){
     console.log(storage);
     console.log(storageRef);
     console.log(mountainsRef);
-
 };
 
 }
