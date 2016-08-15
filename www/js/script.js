@@ -1,17 +1,8 @@
 //
 // Interface
-//
-var config = {
-    apiKey: "AIzaSyBrb3PJaINLeNHOwp2vXMyNKTPkOjFAKt0",
-    authDomain: "fire-rover.firebaseapp.com",
-    databaseURL: "https://fire-rover.firebaseio.com",
-    storageBucket: "fire-rover.appspot.com",
-  };
 
-firebase.initializeApp(config);
-var storage = firebase.storage();
-var storageRef = firebase.storage().ref();
-var mountainsRef = storageRef.child('mountains.jpg');
+// IMPORTANT :
+// add click= toggle_fullscreen(this) to mjpeg_dest in index.php order to restore toggle behavior
 
 function onBodyLoad(){
  
@@ -30,15 +21,11 @@ function onBodyLoad(){
   background.style.display = "block";
 
   window.onmessage = function(e){
-    if (e.data == 'hello') {
-        alert('It works!');
+    if (e.data == 'snapshot') {
+      send_cmd("im");
+      console.log('Rpi took a snapshot');
     }
-    send_cmd("im");
-    console.log(storage);
-    console.log(storageRef);
-    console.log(mountainsRef);
-};
-
+  };
 }
 
 
