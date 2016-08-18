@@ -26,6 +26,13 @@ function onBodyLoad(){
       console.log('Rpi took a snapshot');
     }
   };
+
+  document.onkeypress = function (event) {
+    if(event.keyCode==112){
+      var e = document.getElementById("mjpeg_dest");
+      toggle_fullscreen(e);
+    }
+  };
 }
 
 
